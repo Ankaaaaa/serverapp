@@ -1,0 +1,28 @@
+"write.json"{
+    "item": "к",
+    "quantity": "л",
+    "price": "а",
+    "buyer": "в",
+    "date": "и"
+},
+{
+    "item": "монитор",
+    "quantity": 12,
+    "price": 5400,
+    "buyer": "мвидео",
+    "date": "12.07.2021"
+},
+{
+    "item": "клавиатура",
+    "quantity": 25,
+    "price": 400,
+    "buyer": "эльдорадо",
+    "date": "02.12.2021"
+},
+{
+    "item": "принтер",
+    "quantity": 7,
+    "price": 14000,
+    "buyer": "технопарк",
+    "date": "15.10.2021"
+},
