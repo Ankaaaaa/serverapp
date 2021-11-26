@@ -22,6 +22,7 @@ def say_hello(account_name='Guest'):
             ACCOUNT_NAME: account_name
         }
     }
+    print(type(out))
     return out
 
 

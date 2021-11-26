@@ -8,6 +8,7 @@ from common.variables import ACTION, ACCOUNT_NAME, RESPONSE, MAX_CONNECTIONS, \
 from common.utils import get_message, send_message
 
 
+
 def read_news(message):
     '''
     Обработчик сообщений от клиентов, принимает словарь -
@@ -17,6 +18,7 @@ def read_news(message):
     :param message:
     :return:
     '''
+    print(type(message))
     if ACTION in message and message[ACTION] == PRESENCE and TIME in message \
             and USER in message and message[USER][ACCOUNT_NAME] == 'Guest':
         return {RESPONSE: 200}
@@ -65,6 +67,7 @@ def main():
     # Готовим сокет
 
     transport = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    print(transport)
     transport.bind((listen_address, listen_port))
 
     # Слушаем порт
@@ -77,6 +80,7 @@ def main():
             message_from_client = get_message(client)
             print(message_from_client)
             response = read_news(message_from_client)
+            print(type(response))
             send_message(client, response)
             client.close()
         except (ValueError, json.JSONDecodeError):
