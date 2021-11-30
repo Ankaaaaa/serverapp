@@ -1,0 +1,16 @@
+2021-11-30 11:49:49,657 CRITICAL config_client_log.py Критическая ошибка
+2021-11-30 11:49:49,657 ERROR    config_client_log.py Ошибка
+2021-11-30 11:49:49,657 DEBUG    config_client_log.py Отладочная информация
+2021-11-30 11:49:49,657 INFO     config_client_log.py Информационное сообщение
+2021-11-30 11:50:00,751 CRITICAL config_client_log.py Критическая ошибка
+2021-11-30 11:50:00,751 ERROR    config_client_log.py Ошибка
+2021-11-30 11:50:00,751 DEBUG    config_client_log.py Отладочная информация
+2021-11-30 11:50:00,751 INFO     config_client_log.py Информационное сообщение
+2021-11-30 12:02:12,571 CRITICAL config_client_log.py Критическая ошибка
+2021-11-30 12:02:12,590 ERROR    config_client_log.py Ошибка
+2021-11-30 12:02:12,590 DEBUG    config_client_log.py Отладочная информация
+2021-11-30 12:02:12,590 INFO     config_client_log.py Информационное сообщение
+2021-11-30 17:17:01,648 CRITICAL config_client_log.py Критическая ошибка
+2021-11-30 17:17:01,668 ERROR    config_client_log.py Ошибка
+2021-11-30 17:17:01,668 DEBUG    config_client_log.py Отладочная информация
+2021-11-30 17:17:01,668 INFO     config_client_log.py Информационное сообщение
