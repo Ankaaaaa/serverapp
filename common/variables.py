@@ -22,3 +22,12 @@ PRESENCE = 'presence'
 RESPONSE = 'response'
 ERROR = 'error'
 RESPONDEFAULT_IP_ADDRESSSE = 'respondefault_ip_addressse'
+
+
+import logging
+
+# Текущий уровень логирования
+LOGGING_LEVEL = logging.DEBUG
+# Формат записи сообщений логирования
+SERVER_FORMATTER_TYPE = '%(asctime)s %(levelname)-8s %(filename)s %(message)s'
+
