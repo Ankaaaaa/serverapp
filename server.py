@@ -9,12 +9,14 @@ from common.utils import get_message, send_message
 import argparse
 import logging
 import logs.config_server_log
+from decorated import log
 from errors import IncorrectDataRecivedError
 
 
 # Инициализация логирования сервера.
 SERVER_LOGGER = logging.getLogger('server')
 
+@log
 def read_news(message):
     '''
     Обработчик сообщений от клиентов, принимает словарь -
@@ -33,7 +35,7 @@ def read_news(message):
         ERROR: 'Bad Request'
     }
 
-
+@log
 def create_arg_parser():
     """
     Парсер аргументов коммандной строки
@@ -58,7 +60,7 @@ def main():
     listen_port = namespace.p
     # проверка получения корретного номера порта для работы сервера.
     if listen_port < 1024 or listen_port > 65535:
-        SERVER_LOGGER.critical('Ошибка в номере порта: ',  listen_port)
+        SERVER_LOGGER.critical(f'Ошибка в номере порта: {listen_port}')
         sys.exit(1)
     else:
         SERVER_LOGGER.info(f'Запущен сервер, порт для подключений: {listen_port}, '

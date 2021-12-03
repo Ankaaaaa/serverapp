@@ -10,10 +10,11 @@ from common.utils import get_message, send_message
 import argparse
 import logging
 from errors import ReqFieldMissingError
-
+from decorated import log
 
 CLIENT_LOGGER = logging.getLogger('client')
 
+@log
 def say_hello(account_name='Guest'):
     '''
     Функция генерирует запрос о присутствии клиента
@@ -27,25 +28,25 @@ def say_hello(account_name='Guest'):
             ACCOUNT_NAME: account_name
         }
     }
-    CLIENT_LOGGER.debug('Создано сообщение:', out)
+    CLIENT_LOGGER.debug(f'Создано сообщение: {out}')
     return out
 
-
+@log
 def read_answer(message):
     '''
     Функция разбирает ответ сервера
     :param message:
     :return:
     '''
-    CLIENT_LOGGER.debug('Чтение сообщения от сервера:', message)
+    CLIENT_LOGGER.debug(f'Чтение сообщения от сервера: {message}')
     if RESPONSE in message:
         if message[RESPONSE] == 200:
-            CLIENT_LOGGER.info('Cообщение от сервера прочитано успешно:')
+            CLIENT_LOGGER.info('Cообщение от сервера прочитано успешно')
             return '200 : OK'
         return f'400 : {message[ERROR]}'
     raise ReqFieldMissingError(RESPONSE)
 
-
+@log
 def create_arg_parser():
     """
     Создаём парсер аргументов коммандной строки
@@ -73,6 +74,7 @@ def main():
         transport = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         transport.connect((server_address, server_port))
         message_to_server = say_hello()
+        print(say_hello.__name__)
         send_message(transport, message_to_server)
         read_answer(get_message(transport))
     except json.JSONDecodeError:
