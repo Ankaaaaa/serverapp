@@ -14,3 +14,154 @@
 2021-11-30 17:17:01,668 ERROR    config_client_log.py Ошибка
 2021-11-30 17:17:01,668 DEBUG    config_client_log.py Отладочная информация
 2021-11-30 17:17:01,668 INFO     config_client_log.py Информационное сообщение
+2021-12-03 15:14:16,858 DEBUG    decorated.py Была вызвана функция create_arg_parser c параметрами (), {}. Вызов из модуля __main__.Вызов из функции main().Вызов из функции main
+2021-12-03 15:14:16,858 DEBUG    client.py Создано сообщение:
+2021-12-03 15:14:16,866 DEBUG    decorated.py Была вызвана функция say_hello c параметрами (), {}. Вызов из модуля __main__.Вызов из функции main().Вызов из функции main
+2021-12-03 15:14:16,899 DEBUG    client.py Чтение сообщения от сервера:
+2021-12-03 15:14:16,899 INFO     client.py Cообщение от сервера прочитано успешно:
+2021-12-03 15:14:16,899 DEBUG    decorated.py Была вызвана функция read_answer c параметрами ({'response': 200},), {}. Вызов из модуля __main__.Вызов из функции main().Вызов из функции main
+2021-12-03 15:14:37,516 DEBUG    decorated.py Была вызвана функция create_arg_parser c параметрами (), {}. Вызов из модуля __main__.Вызов из функции main().Вызов из функции main
+2021-12-03 15:14:37,516 DEBUG    client.py Создано сообщение:
+2021-12-03 15:14:37,516 DEBUG    decorated.py Была вызвана функция say_hello c параметрами (), {}. Вызов из модуля __main__.Вызов из функции main().Вызов из функции main
+2021-12-03 15:14:37,532 DEBUG    client.py Чтение сообщения от сервера:
+2021-12-03 15:14:37,532 INFO     client.py Cообщение от сервера прочитано успешно:
+2021-12-03 15:14:37,532 DEBUG    decorated.py Была вызвана функция read_answer c параметрами ({'response': 200},), {}. Вызов из модуля __main__.Вызов из функции main().Вызов из функции main
+2021-12-03 15:14:57,585 DEBUG    decorated.py Была вызвана функция create_arg_parser c параметрами (), {}. Вызов из модуля __main__.Вызов из функции main().Вызов из функции main
+2021-12-03 15:14:57,594 DEBUG    client.py Создано сообщение:
+2021-12-03 15:14:57,594 DEBUG    decorated.py Была вызвана функция say_hello c параметрами (), {}. Вызов из модуля __main__.Вызов из функции main().Вызов из функции main
+2021-12-03 15:14:57,602 DEBUG    client.py Чтение сообщения от сервера:
+2021-12-03 15:14:57,602 INFO     client.py Cообщение от сервера прочитано успешно:
+2021-12-03 15:14:57,602 DEBUG    decorated.py Была вызвана функция read_answer c параметрами ({'response': 200},), {}. Вызов из модуля __main__.Вызов из функции main().Вызов из функции main
+2021-12-03 15:31:17,498 DEBUG    decorated.py Была вызвана функция create_arg_parser c параметрами (), {}. Вызов из модуля __main__.Вызов из функции main().Вызов из функции main
+2021-12-03 15:31:17,498 DEBUG    client.py Создано сообщение:
+2021-12-03 15:31:17,498 DEBUG    decorated.py Была вызвана функция say_hello c параметрами (), {}. Вызов из модуля __main__.Вызов из функции main().Вызов из функции main
+2021-12-03 15:31:17,514 DEBUG    client.py Чтение сообщения от сервера:
+2021-12-03 15:31:17,514 INFO     client.py Cообщение от сервера прочитано успешно:
+2021-12-03 15:31:17,514 DEBUG    decorated.py Была вызвана функция read_answer c параметрами ({'response': 200},), {}. Вызов из модуля __main__.Вызов из функции main().Вызов из функции main
+2021-12-03 15:34:30,569 DEBUG    decorated.py Была вызвана функция create_arg_parser c параметрами (), {}. Вызов из модуля __main__.Вызов из функции main().Вызов из функции main
+2021-12-03 15:34:30,569 DEBUG    client.py Создано сообщение:
+2021-12-03 15:34:30,569 DEBUG    decorated.py Была вызвана функция say_hello c параметрами (), {}. Вызов из модуля __main__.Вызов из функции main().Вызов из функции main
+2021-12-03 15:34:30,585 DEBUG    client.py Чтение сообщения от сервера:
+2021-12-03 15:34:30,585 INFO     client.py Cообщение от сервера прочитано успешно:
+2021-12-03 15:34:30,585 DEBUG    decorated.py Была вызвана функция read_answer c параметрами ({'response': 200},), {}. Вызов из модуля __main__.Вызов из функции main().Вызов из функции main
+2021-12-03 15:34:36,856 DEBUG    decorated.py Была вызвана функция create_arg_parser c параметрами (), {}. Вызов из модуля __main__.Вызов из функции main().Вызов из функции main
+2021-12-03 15:34:36,856 DEBUG    client.py Создано сообщение:
+2021-12-03 15:34:36,856 DEBUG    decorated.py Была вызвана функция say_hello c параметрами (), {}. Вызов из модуля __main__.Вызов из функции main().Вызов из функции main
+2021-12-03 15:34:36,864 DEBUG    client.py Чтение сообщения от сервера:
+2021-12-03 15:34:36,864 INFO     client.py Cообщение от сервера прочитано успешно:
+2021-12-03 15:34:36,864 DEBUG    decorated.py Была вызвана функция read_answer c параметрами ({'response': 200},), {}. Вызов из модуля __main__.Вызов из функции main().Вызов из функции main
+2021-12-03 15:39:54,170 DEBUG    decorated.py Была вызвана функция create_arg_parser c параметрами (), {}. Вызов из модуля __main__.Вызов из функции main().Вызов из функции main
+2021-12-03 15:39:54,170 DEBUG    client.py Создано сообщение:
+2021-12-03 15:51:49,686 DEBUG    decorated.py Была вызвана функция create_arg_parser c параметрами (), {}. Вызов из модуля __main__.Вызов из функции main().Вызов из функции main
+2021-12-03 15:51:49,686 DEBUG    client.py Создано сообщение:
+2021-12-03 15:51:49,686 DEBUG    decorated.py Была вызвана функция say_hello c параметрами (), {}. Вызов из модуля __main__.Вызов из функции main().Вызов из функции main
+2021-12-03 15:52:03,883 DEBUG    decorated.py Была вызвана функция create_arg_parser c параметрами (), {}. Вызов из модуля __main__.Вызов из функции main().Вызов из функции main
+2021-12-03 15:52:03,883 DEBUG    client.py Создано сообщение:
+2021-12-03 15:52:03,883 DEBUG    decorated.py Была вызвана функция say_hello c параметрами (), {}. Вызов из модуля __main__.Вызов из функции main().Вызов из функции main
+2021-12-03 15:52:03,892 DEBUG    client.py Чтение сообщения от сервера:
+2021-12-03 15:52:03,892 INFO     client.py Cообщение от сервера прочитано успешно:
+2021-12-03 15:52:03,892 DEBUG    decorated.py Была вызвана функция read_answer c параметрами ({'response': 200},), {}. Вызов из модуля __main__.Вызов из функции main().Вызов из функции main
+2021-12-03 15:52:13,883 DEBUG    decorated.py Была вызвана функция create_arg_parser c параметрами (), {}. Вызов из модуля __main__.Вызов из функции main().Вызов из функции main
+2021-12-03 15:52:13,883 DEBUG    client.py Создано сообщение:
+2021-12-03 15:52:13,883 DEBUG    decorated.py Была вызвана функция say_hello c параметрами (), {}. Вызов из модуля __main__.Вызов из функции main().Вызов из функции main
+2021-12-03 15:52:13,891 DEBUG    client.py Чтение сообщения от сервера:
+2021-12-03 15:52:13,891 INFO     client.py Cообщение от сервера прочитано успешно:
+2021-12-03 15:52:13,891 DEBUG    decorated.py Была вызвана функция read_answer c параметрами ({'response': 200},), {}. Вызов из модуля __main__.Вызов из функции main().Вызов из функции main
+2021-12-03 15:53:07,971 DEBUG    decorated.py Была вызвана функция create_arg_parser c параметрами (), {}. Вызов из модуля __main__.Вызов из функции main().Вызов из функции main
+2021-12-03 15:53:07,971 DEBUG    client.py Создано сообщение:
+2021-12-03 15:53:07,971 DEBUG    decorated.py Была вызвана функция say_hello c параметрами (), {}. Вызов из модуля __main__.Вызов из функции main().Вызов из функции main
+2021-12-03 15:53:08,003 DEBUG    client.py Чтение сообщения от сервера:
+2021-12-03 15:53:08,003 INFO     client.py Cообщение от сервера прочитано успешно:
+2021-12-03 15:53:08,003 DEBUG    decorated.py Была вызвана функция read_answer c параметрами ({'response': 200},), {}. Вызов из модуля __main__.Вызов из функции main().Вызов из функции main
+2021-12-03 15:53:17,677 DEBUG    decorated.py Была вызвана функция create_arg_parser c параметрами (), {}. Вызов из модуля __main__.Вызов из функции main().Вызов из функции main
+2021-12-03 15:53:17,677 DEBUG    client.py Создано сообщение:
+2021-12-03 15:53:17,677 DEBUG    decorated.py Была вызвана функция say_hello c параметрами (), {}. Вызов из модуля __main__.Вызов из функции main().Вызов из функции main
+2021-12-03 15:53:17,689 DEBUG    client.py Чтение сообщения от сервера:
+2021-12-03 15:53:17,689 INFO     client.py Cообщение от сервера прочитано успешно:
+2021-12-03 15:53:17,689 DEBUG    decorated.py Была вызвана функция read_answer c параметрами ({'response': 200},), {}. Вызов из модуля __main__.Вызов из функции main().Вызов из функции main
+2021-12-03 16:00:49,013 DEBUG    decorated.py Была вызвана функция create_arg_parser c параметрами (), {}. Вызов из модуля __main__.Вызов из функции main().Вызов из функции main
+2021-12-03 16:00:49,021 DEBUG    client.py Создано сообщение:
+2021-12-03 16:00:49,021 DEBUG    decorated.py Была вызвана функция say_hello c параметрами (), {}. Вызов из модуля __main__.Вызов из функции main().Вызов из функции main
+2021-12-03 16:00:49,037 DEBUG    client.py Чтение сообщения от сервера:
+2021-12-03 16:00:49,037 INFO     client.py Cообщение от сервера прочитано успешно:
+2021-12-03 16:00:49,037 DEBUG    decorated.py Была вызвана функция read_answer c параметрами ({'response': 200},), {}. Вызов из модуля __main__.Вызов из функции main().Вызов из функции main
+2021-12-03 16:01:22,266 DEBUG    decorated.py Была вызвана функция create_arg_parser c параметрами (), {}. Вызов из модуля __main__.Вызов из функции main().Вызов из функции main
+2021-12-03 16:01:22,266 DEBUG    client.py Создано сообщение:
+2021-12-03 16:01:22,266 DEBUG    decorated.py Была вызвана функция say_hello c параметрами (), {}. Вызов из модуля __main__.Вызов из функции main().Вызов из функции main
+2021-12-03 16:01:22,274 DEBUG    client.py Чтение сообщения от сервера:
+2021-12-03 16:01:22,274 INFO     client.py Cообщение от сервера прочитано успешно:
+2021-12-03 16:01:22,274 DEBUG    decorated.py Была вызвана функция read_answer c параметрами ({'response': 200},), {}. Вызов из модуля __main__.Вызов из функции main().Вызов из функции main
+2021-12-03 16:10:34,761 DEBUG    decorated.py Была вызвана функция create_arg_parser c параметрами (), {}. Вызов из модуля __main__.Вызов из функции main
+2021-12-03 16:10:34,761 DEBUG    client.py Создано сообщение:
+2021-12-03 16:10:34,761 DEBUG    decorated.py Была вызвана функция say_hello c параметрами (), {}. Вызов из модуля __main__.Вызов из функции main
+2021-12-03 16:10:34,769 DEBUG    client.py Чтение сообщения от сервера:
+2021-12-03 16:10:34,769 INFO     client.py Cообщение от сервера прочитано успешно:
+2021-12-03 16:10:34,769 DEBUG    decorated.py Была вызвана функция read_answer c параметрами ({'response': 200},), {}. Вызов из модуля __main__.Вызов из функции main
+2021-12-03 16:12:50,260 DEBUG    decorated.py Функция create_arg_parser c параметрами (), {}. была вызвана из модуля main__main__.
+2021-12-03 16:12:50,260 DEBUG    client.py Создано сообщение:
+2021-12-03 16:12:50,260 DEBUG    decorated.py Функция say_hello c параметрами (), {}. была вызвана из модуля main__main__.
+2021-12-03 16:12:50,268 DEBUG    client.py Чтение сообщения от сервера:
+2021-12-03 16:12:50,268 INFO     client.py Cообщение от сервера прочитано успешно:
+2021-12-03 16:12:50,268 DEBUG    decorated.py Функция read_answer c параметрами ({'response': 200},), {}. была вызвана из модуля main__main__.
+2021-12-03 16:13:17,382 DEBUG    decorated.py Функция create_arg_parser c параметрами (), {}. была вызвана из модуля main
+2021-12-03 16:13:17,382 DEBUG    client.py Создано сообщение:
+2021-12-03 16:13:17,382 DEBUG    decorated.py Функция say_hello c параметрами (), {}. была вызвана из модуля main
+2021-12-03 16:13:17,399 DEBUG    client.py Чтение сообщения от сервера:
+2021-12-03 16:13:17,399 INFO     client.py Cообщение от сервера прочитано успешно:
+2021-12-03 16:13:17,399 DEBUG    decorated.py Функция read_answer c параметрами ({'response': 200},), {}. была вызвана из модуля main
+2021-12-03 16:16:34,507 DEBUG    decorated.py Функция create_arg_parser c параметрами (), {} - была вызвана из модуля main
+2021-12-03 16:16:34,507 DEBUG    client.py Создано сообщение:
+2021-12-03 16:16:34,516 DEBUG    decorated.py Функция say_hello c параметрами (), {} - была вызвана из модуля main
+2021-12-03 16:16:34,516 DEBUG    decorated.py Функция send_message c параметрами (<socket.socket fd=448, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 50558), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1638537394.5078714, 'user': {'account_name': 'Guest'}}), {} - была вызвана из модуля main
+2021-12-03 16:16:34,524 DEBUG    decorated.py Функция get_message c параметрами (<socket.socket fd=448, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 50558), raddr=('127.0.0.1', 7777)>,), {} - была вызвана из модуля main
+2021-12-03 16:16:34,524 DEBUG    client.py Чтение сообщения от сервера:
+2021-12-03 16:16:34,524 INFO     client.py Cообщение от сервера прочитано успешно:
+2021-12-03 16:16:34,524 DEBUG    decorated.py Функция read_answer c параметрами ({'response': 200},), {} - была вызвана из модуля main
+2021-12-03 16:18:20,041 DEBUG    decorated.py Функция create_arg_parser c параметрами (), {} - была вызвана из модуля main
+2021-12-03 16:18:20,041 DEBUG    client.py Создано сообщение:
+2021-12-03 16:18:20,041 DEBUG    decorated.py Функция say_hello c параметрами (), {} - была вызвана из модуля main
+2021-12-03 16:18:20,041 DEBUG    decorated.py Функция send_message c параметрами (<socket.socket fd=496, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 50569), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1638537500.0418558, 'user': {'account_name': 'Guest'}}), {} - была вызвана из модуля main
+2021-12-03 16:18:20,058 DEBUG    decorated.py Функция get_message c параметрами (<socket.socket fd=496, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 50569), raddr=('127.0.0.1', 7777)>,), {} - была вызвана из модуля main
+2021-12-03 16:18:20,058 DEBUG    client.py Чтение сообщения от сервера:
+2021-12-03 16:18:20,058 INFO     client.py Cообщение от сервера прочитано успешно
+2021-12-03 16:18:20,058 DEBUG    decorated.py Функция read_answer c параметрами ({'response': 200},), {} - была вызвана из модуля main
+2021-12-03 16:20:16,944 DEBUG    decorated.py Функция create_arg_parser c параметрами (), {} - была вызвана из модуля main
+2021-12-03 16:20:16,953 DEBUG    client.py Создано сообщение: {'action': 'presence', 'time': 1638537616.9531538, 'user': {'account_name': 'Guest'}}
+2021-12-03 16:20:16,953 DEBUG    decorated.py Функция say_hello c параметрами (), {} - была вызвана из модуля main
+2021-12-03 16:20:16,953 DEBUG    decorated.py Функция send_message c параметрами (<socket.socket fd=396, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 61582), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1638537616.9531538, 'user': {'account_name': 'Guest'}}), {} - была вызвана из модуля main
+2021-12-03 16:20:16,969 DEBUG    decorated.py Функция get_message c параметрами (<socket.socket fd=396, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 61582), raddr=('127.0.0.1', 7777)>,), {} - была вызвана из модуля main
+2021-12-03 16:20:16,969 DEBUG    client.py Чтение сообщения от сервера: {'response': 200}
+2021-12-03 16:20:16,969 INFO     client.py Cообщение от сервера прочитано успешно
+2021-12-03 16:20:16,969 DEBUG    decorated.py Функция read_answer c параметрами ({'response': 200},), {} - была вызвана из модуля main
+2021-12-03 16:30:31,431 DEBUG    decorated.py Функция create_arg_parser c параметрами (), {} - была вызвана из модуля main
+2021-12-03 16:30:31,431 DEBUG    client.py Создано сообщение: {'action': 'presence', 'time': 1638538231.4310403, 'user': {'account_name': 'Guest'}}
+2021-12-03 16:30:31,439 DEBUG    decorated.py Функция say_hello c параметрами (), {} - была вызвана из модуля main
+2021-12-03 16:30:31,439 DEBUG    decorated.py Функция send_message c параметрами (<socket.socket fd=328, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 61928), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1638538231.4310403, 'user': {'account_name': 'Guest'}}), {} - была вызвана из модуля main
+2021-12-03 16:30:31,447 DEBUG    decorated.py Функция get_message c параметрами (<socket.socket fd=328, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 61928), raddr=('127.0.0.1', 7777)>,), {} - была вызвана из модуля main
+2021-12-03 16:30:31,447 DEBUG    client.py Чтение сообщения от сервера: {'response': 200}
+2021-12-03 16:30:31,447 INFO     client.py Cообщение от сервера прочитано успешно
+2021-12-03 16:30:31,447 DEBUG    decorated.py Функция read_answer c параметрами ({'response': 200},), {} - была вызвана из модуля main
+2021-12-03 16:32:00,136 DEBUG    decorated.py Функция create_arg_parser c параметрами (), {} - была вызвана из модуля main
+2021-12-03 16:32:00,136 DEBUG    client.py Создано сообщение: {'action': 'presence', 'time': 1638538320.1361763, 'user': {'account_name': 'Guest'}}
+2021-12-03 16:32:00,136 DEBUG    decorated.py Функция say_hello c параметрами (), {} - была вызвана из модуля main
+2021-12-03 16:32:00,136 DEBUG    decorated.py Функция send_message c параметрами (<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60762), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1638538320.1361763, 'user': {'account_name': 'Guest'}}), {} - была вызвана из модуля main
+2021-12-03 16:32:00,152 DEBUG    decorated.py Функция get_message c параметрами (<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60762), raddr=('127.0.0.1', 7777)>,), {} - была вызвана из модуля main
+2021-12-03 16:32:00,152 DEBUG    client.py Чтение сообщения от сервера: {'response': 200}
+2021-12-03 16:32:00,152 INFO     client.py Cообщение от сервера прочитано успешно
+2021-12-03 16:32:00,152 DEBUG    decorated.py Функция read_answer c параметрами ({'response': 200},), {} - была вызвана из модуля main
+2021-12-03 16:32:13,866 DEBUG    decorated.py Функция create_arg_parser c параметрами (), {} - была вызвана из модуля main
+2021-12-03 16:32:13,874 DEBUG    client.py Создано сообщение: {'action': 'presence', 'time': 1638538333.874763, 'user': {'account_name': 'Guest'}}
+2021-12-03 16:32:13,874 DEBUG    decorated.py Функция say_hello c параметрами (), {} - была вызвана из модуля main
+2021-12-03 16:32:13,874 DEBUG    decorated.py Функция send_message c параметрами (<socket.socket fd=436, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60764), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1638538333.874763, 'user': {'account_name': 'Guest'}}), {} - была вызвана из модуля main
+2021-12-03 16:32:13,882 DEBUG    decorated.py Функция get_message c параметрами (<socket.socket fd=436, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60764), raddr=('127.0.0.1', 7777)>,), {} - была вызвана из модуля main
+2021-12-03 16:32:13,882 DEBUG    client.py Чтение сообщения от сервера: {'response': 200}
+2021-12-03 16:32:13,882 INFO     client.py Cообщение от сервера прочитано успешно
+2021-12-03 16:32:13,882 DEBUG    decorated.py Функция read_answer c параметрами ({'response': 200},), {} - была вызвана из модуля main
+2021-12-03 16:33:33,102 DEBUG    decorated.py Функция create_arg_parser c параметрами (), {} - была вызвана из модуля main
+2021-12-03 16:33:33,110 DEBUG    client.py Создано сообщение: {'action': 'presence', 'time': 1638538413.110781, 'user': {'account_name': 'Guest'}}
+2021-12-03 16:33:33,110 DEBUG    decorated.py Функция say_hello c параметрами (), {} - была вызвана из модуля main
+2021-12-03 16:33:33,110 DEBUG    decorated.py Функция send_message c параметрами (<socket.socket fd=348, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60768), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1638538413.110781, 'user': {'account_name': 'Guest'}}), {} - была вызвана из модуля main
+2021-12-03 16:33:33,119 DEBUG    decorated.py Функция get_message c параметрами (<socket.socket fd=348, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60768), raddr=('127.0.0.1', 7777)>,), {} - была вызвана из модуля main
+2021-12-03 16:33:33,119 DEBUG    client.py Чтение сообщения от сервера: {'response': 200}
+2021-12-03 16:33:33,119 INFO     client.py Cообщение от сервера прочитано успешно
+2021-12-03 16:33:33,119 DEBUG    decorated.py Функция read_answer c параметрами ({'response': 200},), {} - была вызвана из модуля main
