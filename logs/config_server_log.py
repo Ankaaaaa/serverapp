@@ -17,12 +17,17 @@ PATH = os.path.dirname(os.path.abspath(__file__))
 PATH = os.path.join(PATH, 'server.log')
 
 # создаём потоки вывода логов (ежедневная ротация файлов)
+STREAM_HANDLER = logging.StreamHandler(sys.stderr)
+STREAM_HANDLER.setFormatter(SERVER_FORMATTER)
+STREAM_HANDLER.setLevel(logging.ERROR)
 LOG_FILE = logging.handlers.TimedRotatingFileHandler(PATH, encoding='utf8', interval=1, when='S')
 LOG_FILE.setFormatter(SERVER_FORMATTER)
+
 
 # создаём регистратор и настраиваем его
 LOGGER = logging.getLogger('server')
 LOGGER.addHandler(LOG_FILE)
+LOGGER.addHandler(STREAM_HANDLER)
 #---------- устанавливаем уровень с которого будут выводится сообщения
 LOGGER.setLevel(LOGGING_LEVEL)
 

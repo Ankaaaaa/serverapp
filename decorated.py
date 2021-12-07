@@ -1,9 +1,7 @@
+import inspect
 import logging
 import sys
 import logs.config_server_log
-import logs.config_client_log
-import inspect
-import functools
 
 # определяем кто вызвает
 if sys.argv[0].find('client') == -1:

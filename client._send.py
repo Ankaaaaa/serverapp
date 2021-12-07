@@ -20,8 +20,6 @@ def get_message_from_other(message):
     """чтение сообщений от пользователей"""
     if ACTION in message and message[ACTION] == MESSAGE and \
         SENDER in message and MESSAGE_TEXT in message:
-        print(f'Получено сообщение от пользователя '
-              f'{message[SENDER]}:\n{message[MESSAGE_TEXT]}')
         CLIENT_LOGGER.info(f'Получено сообщение от пользователя '
                            f'{message[SENDER]}:\n{message[MESSAGE_TEXT]}')
     else:
@@ -30,12 +28,11 @@ def get_message_from_other(message):
 @log
 def create_message(sock, account_name='Guest'):
     """Поллачем при воде сообщение с консоли"""
-    message = input('Ввведите сообщение или введите "exit" для выхода')
+    message = input('Ввведите сообщение или введите "exit" для выхода ')
     if message == 'exit':
         sock.close()
         CLIENT_LOGGER.info(f'Пользователь завершил работу')
         sys.exit(0)
-
     message_dict = {
         ACTION: MESSAGE,
         TIME: time.time(),
@@ -85,7 +82,7 @@ def create_arg_parser():
     parser = argparse.ArgumentParser()
     parser.add_argument('addr', default=DEFAULT_IP_ADDRESS, nargs='?')
     parser.add_argument('port', default=DEFAULT_PORT, type=int, nargs='?')
-    parser.add_argument('-m', '--mode', default='listen', nargs='?')
+    parser.add_argument('-m', '--mode', default='send', nargs='?')
     return parser
 
 
