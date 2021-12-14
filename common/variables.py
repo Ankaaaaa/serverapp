@@ -17,6 +17,7 @@ TIME = 'time'
 USER = 'user'
 ACCOUNT_NAME = 'account_name'
 SENDER = 'sender'
+DESTINATION = 'to'
 
 # Прочие ключи, используемые в протоколе
 PRESENCE = 'presence'
@@ -25,6 +26,7 @@ ERROR = 'error'
 RESPONDEFAULT_IP_ADDRESSSE = 'respondefault_ip_addressse'
 MESSAGE = 'message'
 MESSAGE_TEXT = 'mess_text'
+EXIT = 'exit'
 
 
 import logging
@@ -34,3 +36,11 @@ LOGGING_LEVEL = logging.DEBUG
 # Формат записи сообщений логирования
 SERVER_FORMATTER_TYPE = '%(asctime)s %(levelname)-8s %(filename)s %(message)s'
 
+# Словари - ответы:
+# 200
+RESPONSE_200 = {RESPONSE: 200}
+# 400
+RESPONSE_400 = {
+    RESPONSE: 400,
+    ERROR: None
+}
