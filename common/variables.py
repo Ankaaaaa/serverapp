@@ -1,4 +1,5 @@
 """Константы"""
+import logging
 
 # Порт поумолчанию для сетевого ваимодействия
 DEFAULT_PORT = 7777
@@ -27,8 +28,6 @@ MESSAGE = 'message'
 MESSAGE_TEXT = 'mess_text'
 EXIT = 'exit'
 
-
-import logging
 
 # Текущий уровень логирования
 LOGGING_LEVEL = logging.DEBUG

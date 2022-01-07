@@ -30,6 +30,8 @@ LOGGER.addHandler(LOG_FILE)
 LOGGER.addHandler(STREAM_HANDLER)
 #---------- устанавливаем уровень с которого будут выводится сообщения
 LOGGER.setLevel(LOGGING_LEVEL)
+LOG_FILE.close()
+
 
 if __name__ == '__main__':
     LOGGER.critical('Критическая ошибка')
