@@ -1,0 +1,1 @@
+2022-01-07 14:17:31,839 DEBUG    server.py Получено сообщение от клиента {'action': 'presence', 'time': 1641554195.679989, 'user': {'account_name': 'anna'}}

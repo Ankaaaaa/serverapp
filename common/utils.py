@@ -5,8 +5,8 @@ import sys
 from common.variables import *
 from errors import IncorrectDataRecivedError, NonDictInputError
 sys.path.append('../')
-from decorated import log
-@log
+# from decorated import log
+# @log
 def get_message(client):
     '''
     Утилита приёма и декодирования сообщения
@@ -26,7 +26,7 @@ def get_message(client):
     else:
         raise IncorrectDataRecivedError
 
-@log
+# @log
 def send_message(sock, message):
     '''
     Утилита кодирования и отправки сообщения

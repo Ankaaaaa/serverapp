@@ -4,8 +4,7 @@ import sys
 import json
 import socket
 import time
-from common.variables import ACTION, PRESENCE, TIME, USER, ACCOUNT_NAME, \
-    RESPONSE, ERROR, DEFAULT_IP_ADDRESS, DEFAULT_PORT, MESSAGE, SENDER, MESSAGE_TEXT, DESTINATION, EXIT
+from common.variables import *
 from common.utils import get_message, send_message
 import argparse
 import logging
@@ -53,7 +52,7 @@ class ClientSender(threading.Thread, metaclass=ClientMaker):
             CLIENT_LOGGER.info(f'Сформирован словарь сообщения для пользователя  {to_user}')
         except:
             CLIENT_LOGGER.critical('Потеряно соединение с сервером')
-            sys.exit(1)
+            exit(1)
 
 
     def user_community(self):
@@ -86,7 +85,7 @@ class ClientSender(threading.Thread, metaclass=ClientMaker):
 
 
 # Класс-приём сообщений с сервера. Принимает сообщения, выводит в консоль
-class ClientReader(threading.Thread , metaclass=ClientMaker):
+class ClientReader(threading.Thread, metaclass=ClientMaker):
     def __init__(self, account_name, sock):
         self.account_name = account_name
         self.sock = sock
@@ -139,7 +138,8 @@ def read_answer(message):
         if message[RESPONSE] == 200:
             CLIENT_LOGGER.info('Cообщение от сервера прочитано успешно')
             return '200 : OK'
-        return f'400 : {message[ERROR]}'
+        elif message[RESPONSE] == 400:
+            raise ServerError(f'400 : {message[ERROR]}')
     raise ReqFieldMissingError(RESPONSE)
 
 @log
@@ -150,7 +150,6 @@ def create_arg_parser():
     parser = argparse.ArgumentParser()
     parser.add_argument('addr', default=DEFAULT_IP_ADDRESS, nargs='?')
     parser.add_argument('port', default=DEFAULT_PORT, type=int, nargs='?')
-    # parser.add_argument('-m', '--mode', default='listen', nargs='?')
     parser.add_argument('-n', '--name', default=None, nargs='?')
     return parser
 
@@ -165,7 +164,7 @@ def main():
 
     if server_port < 1024 or server_port > 65535:
         CLIENT_LOGGER.critical('Ошибка в номере порта: ',  server_port)
-        sys.exit(1)
+        exit(1)
 
     """Сообщаем о запуске"""
     print(f'Консольный месседжер. Клиентский модуль. Имя пользователя: {client_name}')
@@ -186,8 +185,8 @@ def main():
         transport = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         transport.connect((server_address, server_port))
         send_message(transport, say_hello(client_name))
-        read_answer(get_message(transport))
-        CLIENT_LOGGER.info(f'Установлено соединение с сервером.')
+        answer = read_answer(get_message(transport))
+        CLIENT_LOGGER.info(f'Установлено соединение с сервером: {answer}')
     except json.JSONDecodeError:
         CLIENT_LOGGER.error('Не удалось декодировать сообщение сервера.')
         exit(1)
@@ -207,12 +206,12 @@ def main():
         # запускаем клиенский процесс приёма сообщний
         receiver = ClientReader(client_name, transport)
         receiver.daemon = True
-        receiver.start()
+        receiver.get_message_from_other()
 
         # запускаем отправку сообщений и взаимодействие с пользователем.
         user_comm = ClientSender(client_name, transport)
         user_comm.daemon = True
-        user_comm.start()
+        user_comm.user_community()
         CLIENT_LOGGER.debug('Запущены процессы')
 
 

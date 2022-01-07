@@ -1178,3 +1178,143 @@ to=0, laddr=('127.0.0.1', 55922), raddr=('127.0.0.1', 7777)>, {'action': 'presen
 2021-12-24 15:41:39,337 DEBUG    decorated.py Функция say_hello c параметрами ('an',), {} - была вызвана из модуля main
 2021-12-24 15:41:39,337 DEBUG    decorated.py Функция send_message c параметрами (<socket.socket fd=284, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55928), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1640349699.3375833, 'user': {'account_name': 'an'}}), {} - была вызвана из модуля main
 2021-12-24 15:41:39,846 ERROR    client.py Не удалось декодировать сообщение сервера.
+2022-01-07 12:37:38,266 DEBUG    decorated.py Функция create_arg_parser c параметрами (), {} - была вызвана из модуля main
+2022-01-07 12:37:44,447 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1, порт: 7777, пользователь: anna
+2022-01-07 12:37:44,462 DEBUG    client.py Создано сообщение: {'action': 'presence', 'time': 1641548264.4627566, 'user': {'account_name': 'anna'}} для пользователя anna
+2022-01-07 12:37:44,462 DEBUG    decorated.py Функция say_hello c параметрами ('anna',), {} - была вызвана из модуля main
+2022-01-07 12:37:44,462 DEBUG    decorated.py Функция send_message c параметрами (<socket.socket fd=356, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 53026), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1641548264.4627566, 'user': {'account_name': 'anna'}}), {} - была вызвана из модуля main
+2022-01-07 12:48:59,377 DEBUG    decorated.py Функция create_arg_parser c параметрами (), {} - была вызвана из модуля main
+2022-01-07 12:49:40,197 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1, порт: 7777, пользователь: anna
+2022-01-07 12:49:57,926 DEBUG    client.py Создано сообщение: {'action': 'presence', 'time': 1641548992.2073975, 'user': {'account_name': 'anna'}} для пользователя anna
+2022-01-07 12:50:04,534 DEBUG    decorated.py Функция say_hello c параметрами ('anna',), {} - была вызвана из модуля main
+2022-01-07 12:50:20,456 DEBUG    decorated.py Функция send_message c параметрами (<socket.socket fd=908, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 65141), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1641548992.2073975, 'user': {'account_name': 'anna'}}), {} - была вызвана из модуля main
+2022-01-07 13:03:53,497 DEBUG    decorated.py Функция create_arg_parser c параметрами (), {} - была вызвана из модуля main
+2022-01-07 13:03:56,674 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1, порт: 7777, пользователь: anna
+2022-01-07 13:03:56,674 DEBUG    client.py Создано сообщение: {'action': 'presence', 'time': 1641549836.6746802, 'user': {'account_name': 'anna'}} для пользователя anna
+2022-01-07 13:03:56,674 DEBUG    decorated.py Функция say_hello c параметрами ('anna',), {} - была вызвана из модуля main
+2022-01-07 13:03:56,674 DEBUG    decorated.py Функция send_message c параметрами (<socket.socket fd=332, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54715), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1641549836.6746802, 'user': {'account_name': 'anna'}}), {} - была вызвана из модуля main
+2022-01-07 13:04:02,454 DEBUG    decorated.py Функция create_arg_parser c параметрами (), {} - была вызвана из модуля main
+2022-01-07 13:04:08,145 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1, порт: 7777, пользователь: nono
+2022-01-07 13:04:08,145 DEBUG    client.py Создано сообщение: {'action': 'presence', 'time': 1641549848.1455333, 'user': {'account_name': 'nono'}} для пользователя nono
+2022-01-07 13:04:08,145 DEBUG    decorated.py Функция say_hello c параметрами ('nono',), {} - была вызвана из модуля main
+2022-01-07 13:04:08,145 DEBUG    decorated.py Функция send_message c параметрами (<socket.socket fd=440, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54716), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1641549848.1455333, 'user': {'account_name': 'nono'}}), {} - была вызвана из модуля main
+2022-01-07 13:04:08,646 ERROR    client.py Не удалось декодировать сообщение сервера.
+2022-01-07 13:05:06,058 DEBUG    decorated.py Функция create_arg_parser c параметрами (), {} - была вызвана из модуля main
+2022-01-07 13:05:18,585 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1, порт: 7777, пользователь: anna
+2022-01-07 13:05:18,585 DEBUG    client.py Создано сообщение: {'action': 'presence', 'time': 1641549918.5859735, 'user': {'account_name': 'anna'}} для пользователя anna
+2022-01-07 13:05:18,601 DEBUG    decorated.py Функция say_hello c параметрами ('anna',), {} - была вызвана из модуля main
+2022-01-07 13:05:18,601 DEBUG    decorated.py Функция send_message c параметрами (<socket.socket fd=764, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54728), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1641549918.5859735, 'user': {'account_name': 'anna'}}), {} - была вызвана из модуля main
+2022-01-07 13:05:44,554 DEBUG    decorated.py Функция create_arg_parser c параметрами (), {} - была вызвана из модуля main
+2022-01-07 13:06:36,870 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1, порт: 7777, пользователь: an
+2022-01-07 13:06:36,870 DEBUG    client.py Создано сообщение: {'action': 'presence', 'time': 1641549996.8706226, 'user': {'account_name': 'an'}} для пользователя an
+2022-01-07 13:06:36,870 DEBUG    decorated.py Функция say_hello c параметрами ('an',), {} - была вызвана из модуля main
+2022-01-07 13:06:36,870 DEBUG    decorated.py Функция send_message c параметрами (<socket.socket fd=820, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54733), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1641549996.8706226, 'user': {'account_name': 'an'}}), {} - была вызвана из модуля main
+2022-01-07 13:08:19,372 CRITICAL client.py Не удалось подключится к серверу
+2022-01-07 13:08:28,588 DEBUG    decorated.py Функция create_arg_parser c параметрами (), {} - была вызвана из модуля main
+2022-01-07 13:08:31,377 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1, порт: 7777, пользователь: anna
+2022-01-07 13:08:31,377 DEBUG    client.py Создано сообщение: {'action': 'presence', 'time': 1641550111.3779259, 'user': {'account_name': 'anna'}} для пользователя anna
+2022-01-07 13:08:31,377 DEBUG    decorated.py Функция say_hello c параметрами ('anna',), {} - была вызвана из модуля main
+2022-01-07 13:08:31,377 DEBUG    decorated.py Функция send_message c параметрами (<socket.socket fd=388, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52832), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1641550111.3779259, 'user': {'account_name': 'anna'}}), {} - была вызвана из модуля main
+2022-01-07 13:08:45,888 DEBUG    decorated.py Функция create_arg_parser c параметрами (), {} - была вызвана из модуля main
+2022-01-07 13:08:47,450 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1, порт: 7777, пользователь: n
+2022-01-07 13:08:47,450 DEBUG    client.py Создано сообщение: {'action': 'presence', 'time': 1641550127.4500923, 'user': {'account_name': 'n'}} для пользователя n
+2022-01-07 13:08:47,450 DEBUG    decorated.py Функция say_hello c параметрами ('n',), {} - была вызвана из модуля main
+2022-01-07 13:08:47,450 DEBUG    decorated.py Функция send_message c параметрами (<socket.socket fd=452, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52833), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1641550127.4500923, 'user': {'account_name': 'n'}}), {} - была вызвана из модуля main
+2022-01-07 13:08:47,953 ERROR    client.py Не удалось декодировать сообщение сервера.
+2022-01-07 13:11:54,575 DEBUG    decorated.py Функция create_arg_parser c параметрами (), {} - была вызвана из модуля main
+2022-01-07 13:13:04,628 DEBUG    decorated.py Функция create_arg_parser c параметрами (), {} - была вызвана из модуля main
+2022-01-07 13:13:27,865 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1, порт: 7777, пользователь: anna
+2022-01-07 13:13:52,214 DEBUG    client.py Создано сообщение: {'action': 'presence', 'time': 1641550425.9712958, 'user': {'account_name': 'anna'}} для пользователя anna
+2022-01-07 13:13:57,030 DEBUG    decorated.py Функция say_hello c параметрами ('anna',), {} - была вызвана из модуля main
+2022-01-07 13:14:11,808 DEBUG    decorated.py Функция send_message c параметрами (<socket.socket fd=932, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55206), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1641550425.9712958, 'user': {'account_name': 'anna'}}), {} - была вызвана из модуля main
+2022-01-07 13:19:09,846 DEBUG    decorated.py Функция create_arg_parser c параметрами (), {} - была вызвана из модуля main
+2022-01-07 13:19:13,477 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1, порт: 7777, пользователь: anna
+2022-01-07 13:19:13,477 DEBUG    client.py Создано сообщение: {'action': 'presence', 'time': 1641550753.477995, 'user': {'account_name': 'anna'}} для пользователя anna
+2022-01-07 13:19:13,477 DEBUG    decorated.py Функция say_hello c параметрами ('anna',), {} - была вызвана из модуля main
+2022-01-07 13:19:13,477 DEBUG    decorated.py Функция send_message c параметрами (<socket.socket fd=392, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51162), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1641550753.477995, 'user': {'account_name': 'anna'}}), {} - была вызвана из модуля main
+2022-01-07 13:19:59,207 DEBUG    decorated.py Функция create_arg_parser c параметрами (), {} - была вызвана из модуля main
+2022-01-07 13:20:20,017 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1, порт: 7777, пользователь: an
+2022-01-07 13:20:57,025 DEBUG    client.py Создано сообщение: {'action': 'presence', 'time': 1641550852.6625688, 'user': {'account_name': 'an'}} для пользователя an
+2022-01-07 13:21:02,760 DEBUG    decorated.py Функция say_hello c параметрами ('an',), {} - была вызвана из модуля main
+2022-01-07 13:21:22,358 DEBUG    decorated.py Функция send_message c параметрами (<socket.socket fd=804, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51175), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1641550852.6625688, 'user': {'account_name': 'an'}}), {} - была вызвана из модуля main
+2022-01-07 13:23:33,143 DEBUG    decorated.py Функция create_arg_parser c параметрами (), {} - была вызвана из модуля main
+2022-01-07 13:23:49,504 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1, порт: 7777, пользователь: ar
+2022-01-07 13:24:31,526 DEBUG    client.py Создано сообщение: {'action': 'presence', 'time': 1641551065.6262197, 'user': {'account_name': 'ar'}} для пользователя ar
+2022-01-07 13:24:35,932 DEBUG    decorated.py Функция say_hello c параметрами ('ar',), {} - была вызвана из модуля main
+2022-01-07 13:24:51,096 DEBUG    decorated.py Функция send_message c параметрами (<socket.socket fd=800, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 63751), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1641551065.6262197, 'user': {'account_name': 'ar'}}), {} - была вызвана из модуля main
+2022-01-07 14:04:21,214 DEBUG    decorated.py Функция create_arg_parser c параметрами (), {} - была вызвана из модуля __main__
+2022-01-07 14:04:23,842 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1, порт: 7777, пользователь: a
+2022-01-07 14:04:23,842 DEBUG    client.py Создано сообщение: {'action': 'presence', 'time': 1641553463.842052, 'user': {'account_name': 'a'}} для пользователя a
+2022-01-07 14:04:23,842 DEBUG    decorated.py Функция say_hello c параметрами ('a',), {} - была вызвана из модуля __main__
+2022-01-07 14:04:23,888 DEBUG    client.py Чтение сообщения от сервера: {'response': 200}
+2022-01-07 14:04:23,888 INFO     client.py Cообщение от сервера прочитано успешно
+2022-01-07 14:04:23,888 DEBUG    decorated.py Функция read_answer c параметрами ({'response': 200},), {} - была вызвана из модуля __main__
+2022-01-07 14:04:23,888 INFO     client.py Установлено соединение с сервером: 200 : OK
+2022-01-07 14:04:41,698 CRITICAL client.py fПотеряно соединение с севрером
+2022-01-07 14:04:52,166 DEBUG    decorated.py Функция create_arg_parser c параметрами (), {} - была вызвана из модуля __main__
+2022-01-07 14:06:20,895 DEBUG    decorated.py Функция create_arg_parser c параметрами (), {} - была вызвана из модуля __main__
+2022-01-07 14:07:11,644 DEBUG    decorated.py Функция create_arg_parser c параметрами (), {} - была вызвана из модуля __main__
+2022-01-07 14:07:14,296 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1, порт: 7777, пользователь: a
+2022-01-07 14:07:14,296 DEBUG    client.py Создано сообщение: {'action': 'presence', 'time': 1641553634.2969298, 'user': {'account_name': 'a'}} для пользователя a
+2022-01-07 14:07:14,296 DEBUG    decorated.py Функция say_hello c параметрами ('a',), {} - была вызвана из модуля __main__
+2022-01-07 14:07:14,343 DEBUG    client.py Чтение сообщения от сервера: {'response': 200}
+2022-01-07 14:07:14,343 INFO     client.py Cообщение от сервера прочитано успешно
+2022-01-07 14:07:14,343 DEBUG    decorated.py Функция read_answer c параметрами ({'response': 200},), {} - была вызвана из модуля __main__
+2022-01-07 14:07:14,343 INFO     client.py Установлено соединение с сервером: 200 : OK
+2022-01-07 14:07:23,790 DEBUG    decorated.py Функция create_arg_parser c параметрами (), {} - была вызвана из модуля __main__
+2022-01-07 14:07:26,520 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1, порт: 7777, пользователь: an
+2022-01-07 14:07:26,520 DEBUG    client.py Создано сообщение: {'action': 'presence', 'time': 1641553646.520399, 'user': {'account_name': 'an'}} для пользователя an
+2022-01-07 14:07:26,520 DEBUG    decorated.py Функция say_hello c параметрами ('an',), {} - была вызвана из модуля __main__
+2022-01-07 14:07:26,567 DEBUG    client.py Чтение сообщения от сервера: {'response': 200}
+2022-01-07 14:07:26,567 INFO     client.py Cообщение от сервера прочитано успешно
+2022-01-07 14:07:26,567 DEBUG    decorated.py Функция read_answer c параметрами ({'response': 200},), {} - была вызвана из модуля __main__
+2022-01-07 14:07:26,567 INFO     client.py Установлено соединение с сервером: 200 : OK
+2022-01-07 14:08:00,943 CRITICAL client.py fПотеряно соединение с севрером
+2022-01-07 14:08:00,943 CRITICAL client.py fПотеряно соединение с севрером
+2022-01-07 14:08:23,267 DEBUG    decorated.py Функция create_arg_parser c параметрами (), {} - была вызвана из модуля __main__
+2022-01-07 14:08:26,484 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1, порт: 7777, пользователь: an
+2022-01-07 14:08:26,484 DEBUG    client.py Создано сообщение: {'action': 'presence', 'time': 1641553706.4848433, 'user': {'account_name': 'an'}} для пользователя an
+2022-01-07 14:08:26,484 DEBUG    decorated.py Функция say_hello c параметрами ('an',), {} - была вызвана из модуля __main__
+2022-01-07 14:08:26,515 DEBUG    client.py Чтение сообщения от сервера: {'response': 200}
+2022-01-07 14:08:26,515 INFO     client.py Cообщение от сервера прочитано успешно
+2022-01-07 14:08:26,515 DEBUG    decorated.py Функция read_answer c параметрами ({'response': 200},), {} - была вызвана из модуля __main__
+2022-01-07 14:08:26,515 INFO     client.py Установлено соединение с сервером: 200 : OK
+2022-01-07 14:08:29,184 DEBUG    decorated.py Функция create_arg_parser c параметрами (), {} - была вызвана из модуля __main__
+2022-01-07 14:08:31,764 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1, порт: 7777, пользователь: a
+2022-01-07 14:08:31,764 DEBUG    client.py Создано сообщение: {'action': 'presence', 'time': 1641553711.764459, 'user': {'account_name': 'a'}} для пользователя a
+2022-01-07 14:08:31,764 DEBUG    decorated.py Функция say_hello c параметрами ('a',), {} - была вызвана из модуля __main__
+2022-01-07 14:08:31,793 DEBUG    client.py Чтение сообщения от сервера: {'response': 200}
+2022-01-07 14:08:31,793 INFO     client.py Cообщение от сервера прочитано успешно
+2022-01-07 14:08:31,793 DEBUG    decorated.py Функция read_answer c параметрами ({'response': 200},), {} - была вызвана из модуля __main__
+2022-01-07 14:08:31,793 INFO     client.py Установлено соединение с сервером: 200 : OK
+2022-01-07 14:11:33,474 DEBUG    decorated.py Функция create_arg_parser c параметрами (), {} - была вызвана из модуля __main__
+2022-01-07 14:11:38,534 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1, порт: 7777, пользователь: A
+2022-01-07 14:11:38,534 DEBUG    client.py Создано сообщение: {'action': 'presence', 'time': 1641553898.5341673, 'user': {'account_name': 'A'}} для пользователя A
+2022-01-07 14:11:38,534 DEBUG    decorated.py Функция say_hello c параметрами ('A',), {} - была вызвана из модуля __main__
+2022-01-07 14:11:38,596 DEBUG    client.py Чтение сообщения от сервера: {'response': 200}
+2022-01-07 14:11:38,596 INFO     client.py Cообщение от сервера прочитано успешно
+2022-01-07 14:11:38,596 DEBUG    decorated.py Функция read_answer c параметрами ({'response': 200},), {} - была вызвана из модуля __main__
+2022-01-07 14:11:38,596 INFO     client.py Установлено соединение с сервером: 200 : OK
+2022-01-07 14:11:48,045 DEBUG    decorated.py Функция create_arg_parser c параметрами (), {} - была вызвана из модуля __main__
+2022-01-07 14:11:50,434 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1, порт: 7777, пользователь: B
+2022-01-07 14:11:50,434 DEBUG    client.py Создано сообщение: {'action': 'presence', 'time': 1641553910.4347875, 'user': {'account_name': 'B'}} для пользователя B
+2022-01-07 14:11:50,434 DEBUG    decorated.py Функция say_hello c параметрами ('B',), {} - была вызвана из модуля __main__
+2022-01-07 14:11:50,475 DEBUG    client.py Чтение сообщения от сервера: {'response': 200}
+2022-01-07 14:11:50,475 INFO     client.py Cообщение от сервера прочитано успешно
+2022-01-07 14:11:50,475 DEBUG    decorated.py Функция read_answer c параметрами ({'response': 200},), {} - была вызвана из модуля __main__
+2022-01-07 14:11:50,475 INFO     client.py Установлено соединение с сервером: 200 : OK
+2022-01-07 14:13:45,286 CRITICAL client.py fПотеряно соединение с севрером
+2022-01-07 14:13:45,286 CRITICAL client.py fПотеряно соединение с севрером
+2022-01-07 14:14:05,896 DEBUG    client.py Создано сообщение {'action': 'message', 'sender': 'B', 'to': 'A', 'time': 1641554045.8961165, 'mess_text': 'ana'}
+2022-01-07 14:14:05,896 CRITICAL client.py Потеряно соединение с сервером
+2022-01-07 14:14:46,638 DEBUG    decorated.py Функция create_arg_parser c параметрами (), {} - была вызвана из модуля __main__
+2022-01-07 14:15:04,870 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1, порт: 7777, пользователь: A
+2022-01-07 14:15:21,642 CRITICAL client.py Не удалось подключится к серверу
+2022-01-07 14:15:56,650 DEBUG    decorated.py Функция create_arg_parser c параметрами (), {} - была вызвана из модуля __main__
+2022-01-07 14:16:28,707 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1, порт: 7777, пользователь: anna
+2022-01-07 14:16:39,008 DEBUG    client.py Создано сообщение: {'action': 'presence', 'time': 1641554195.679989, 'user': {'account_name': 'anna'}} для пользователя anna
+2022-01-07 14:16:43,595 DEBUG    decorated.py Функция say_hello c параметрами ('anna',), {} - была вызвана из модуля __main__
+2022-01-07 14:18:40,061 DEBUG    client.py Чтение сообщения от сервера: {'response': 200}
+2022-01-07 14:18:44,958 INFO     client.py Cообщение от сервера прочитано успешно
+2022-01-07 14:18:50,286 DEBUG    decorated.py Функция read_answer c параметрами ({'response': 200},), {} - была вызвана из модуля __main__
+2022-01-07 14:18:53,520 INFO     client.py Установлено соединение с сервером: 200 : OK
