@@ -1,27 +1,26 @@
 """Программа-сервер"""
-import os.path
 import socket
 import sys
+import os
 import argparse
 import json
 import logging
 import select
 import time
 import threading
+import configparser
 import logs.config_server_log
-from errors import IncorrectDataRecivedError
+from common import decorated
 from common.variables import *
 from common.utils import *
-import decorated
+from common.decorated import log
 from descriptrs import Port
 from metaclasses import ServerMaker
 from server_database import ServerStorage
-import configparser 
 from PyQt5.QtWidgets import QApplication, QMessageBox
 from PyQt5.QtCore import QTimer
 from server_gui import MainWindow, gui_create_model, HistoryWindow, create_stat_model, ConfigWindow
 from PyQt5.QtGui import QStandardItemModel, QStandardItem
-
 # Инициализация логирования сервера
 SERVER_LOGGER = logging.getLogger('server')
 
@@ -31,7 +30,7 @@ new_connection = False
 conflag_lock = threading.Lock()
 
 # Основной класс сервера
-class Server(metaclass=ServerMaker):
+class Server(threading.Thread, metaclass=ServerMaker):
     port = Port()
 
     def __init__(self, listen_address, listen_port, database):
@@ -72,6 +71,7 @@ class Server(metaclass=ServerMaker):
 
     def main_loop(self):
         # Инициализация Сокета
+        global new_connection
         self.init_socket()
         while True:
             # Ждём подключения, если таймаут вышел, ловим исключение.
@@ -113,16 +113,20 @@ class Server(metaclass=ServerMaker):
                                 break
                         # удаляем клиента который отключился
                         self.clients.remove(client_with_message)
+                        with conflag_lock:
+                            new_connection = True
 
                 # Если есть сообщения для отправки, обрабатываем каждое
                 for mes in self.messages:
                     try:
                         self.process_message(mes, send_data_lst)
-                    except Exception:
+                    except (ConnectionAbortedError, ConnectionError, ConnectionResetError, ConnectionRefusedError):
                         SERVER_LOGGER.info(f'Клиент {mes[DESTINATION]} отключился от сервера.')
                         self.clients.remove(self.names[mes[DESTINATION]])
                         self.database.user_logout(mes[DESTINATION])
                         del self.names[mes[DESTINATION]]
+                        with conflag_lock:
+                            new_connection = True
                 self.messages.clear()
 
         # Функция адресной отправки сообщения определённому клиенту. Принимает словарь сообщение, список зарегистрированых
@@ -166,18 +170,23 @@ class Server(metaclass=ServerMaker):
             return
         # Если это сообщение, то добавляем его в очередь сообщений.
         # Ответ не требуется.
-        elif ACTION in message and message[ACTION] == MESSAGE and \
-            DESTINATION in message and TIME in message and MESSAGE_TEXT in message and \
-                SENDER in message:
-            self.messages_list.append(message)
-            self.database.process_message(
-                message[SENDER], message[DESTINATION])
+        elif ACTION in message and message[ACTION] == MESSAGE and DESTINATION in message and TIME in message \
+                and SENDER in message and MESSAGE_TEXT in message and self.names[message[SENDER]] == client:
+            if message[DESTINATION] in self.names:
+                self.messages.append(message)
+                self.database.process_message(message[SENDER], message[DESTINATION])
+                send_message(client, RESPONSE_200)
+            else:
+                response = RESPONSE_400
+                response[ERROR] = 'Пользователь не зарегистрирован на сервере.'
+                send_message(client, response)
             return
 
         # если клиент выходит
-        elif ACTION in message and message[ACTION] == EXIT and \
-            ACCOUNT_NAME in message and self.names[message[ACCOUNT_NAME]] == client:
+        elif ACTION in message and message[ACTION] == EXIT and ACCOUNT_NAME in message \
+                and self.names[message[ACCOUNT_NAME]] == client:
             self.database.user_logout(message[ACCOUNT_NAME])
+            SERVER_LOGGER.info(f'Клиент {message[ACCOUNT_NAME]} корректно отключился от сервера.')
             self.clients.remove(self.names[message[ACCOUNT_NAME]])
             self.names[message[ACCOUNT_NAME]].close()
             del self.names[message[ACCOUNT_NAME]]
@@ -217,7 +226,20 @@ class Server(metaclass=ServerMaker):
             response[ERROR] = 'Запрос некорректный'
             send_message(client, response)
             return
-
+def config_load():
+    config = configparser.ConfigParser()
+    dir_path = os.path.dirname(os.path.realpath(__file__))
+    config.read(f"{dir_path}/{'server+++.ini'}")
+    # Если конфиг файл загружен правильно, запускаемся, иначе конфиг по умолчанию.
+    if 'SETTINGS' in config:
+        return config
+    else:
+        config.add_section('SETTINGS')
+        config.set('SETTINGS', 'Default_port', str(DEFAULT_PORT))
+        config.set('SETTINGS', 'Listen_Address', '')
+        config.set('SETTINGS', 'Database_path', '')
+        config.set('SETTINGS', 'Database_file', 'server_database.db3')
+        return config
 
 @decorated.log
 def create_arg_parser(default_port, default_address):
@@ -233,14 +255,6 @@ def create_arg_parser(default_port, default_address):
     return listen_address, listen_port
 
 
-def print_help():
-    print('Поддерживаемые комманды:')
-    print('users - список известных пользователей')
-    print('connected - список подключённых пользователей')
-    print('loghist - история входов пользователя')
-    print('exit - завершение работы сервера.')
-    print('help - вывод справки по поддерживаемым командам')
-
 
 def main():
     '''
@@ -250,9 +264,7 @@ def main():
     :return:
     '''
     # Загрузка файла конфигурации сервера
-    config = configparser.ConfigParser()
-    dir_path = os.path.dirname(os.path.realpath(__file__))
-    config.read(f"{dir_path}/{'server.ini'}")
+    config = config_load()
 
 
     # Загрузка параметров командной строки, если нет параметров, то задаём
@@ -269,8 +281,7 @@ def main():
     server = Server(listen_address, listen_port, database)
     server.daemon = True
     server.main_loop()
-    # Печатаем справку:
-    print_help()
+
     # Создаём графическое окружение для сервера:
     server_app = QApplication(sys.argv)
     main_window = MainWindow()
@@ -327,8 +338,8 @@ def main():
             config['SETTINGS']['Listen_Address'] = config_window.ip.text()
             if 1023 < port < 65536:
                 config['SETTINGS']['Default_port'] = str(port)
-                print(port)
-                with open('server.ini', 'w') as conf:
+                dir_path = os.path.dirname(os.path.realpath(__file__))
+                with open(f"{dir_path}/{'server+++.ini'}", 'w') as conf:
                     config.write(conf)
                     message.information(
                         config_window, 'OK', 'Настройки успешно сохранены!')

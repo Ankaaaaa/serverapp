@@ -3,7 +3,7 @@
 import json
 import sys
 from common.variables import *
-from errors import IncorrectDataRecivedError, NonDictInputError
+from common.errors import IncorrectDataRecivedError, NonDictInputError
 sys.path.append('../')
 # from decorated import log
 # @log
