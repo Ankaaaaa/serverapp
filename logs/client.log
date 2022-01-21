@@ -1676,3 +1676,141 @@ to=0, laddr=('127.0.0.1', 55922), raddr=('127.0.0.1', 7777)>, {'action': 'presen
 2022-01-18 14:40:30,906 DEBUG    transport.py Транспорт завершает работу.
 2022-01-18 14:40:31,283 DEBUG    transport.py Потеряно соединение с сервером.
 2022-01-18 14:40:31,781 DEBUG    transport.py Транспорт завершает работу.
+2022-01-20 16:25:09,062 DEBUG    decorated.py Функция arg_parser c параметрами (), {} - была вызвана из модуля __main__
+2022-01-20 16:25:09,063 DEBUG    client.py Args loaded
+2022-01-20 16:25:29,210 DEBUG    decorated.py Функция arg_parser c параметрами (), {} - была вызвана из модуля __main__
+2022-01-20 16:25:29,211 DEBUG    client.py Args loaded
+2022-01-20 16:25:29,212 DEBUG    decorated.py Функция arg_parser c параметрами (), {} - была вызвана из модуля __main__
+2022-01-20 16:25:29,212 DEBUG    client.py Args loaded
+2022-01-20 16:25:29,716 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test2
+2022-01-20 16:25:29,718 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2022-01-20 16:25:49,251 DEBUG    decorated.py Функция arg_parser c параметрами (), {} - была вызвана из модуля __main__
+2022-01-20 16:25:49,252 DEBUG    client.py Args loaded
+2022-01-20 16:25:49,632 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2022-01-20 16:26:10,375 DEBUG    decorated.py Функция arg_parser c параметрами (), {} - была вызвана из модуля __main__
+2022-01-20 16:26:10,375 DEBUG    client.py Args loaded
+2022-01-20 16:26:19,083 DEBUG    client.py Using USERNAME = test1, PASSWD = 123456.
+2022-01-20 16:26:19,083 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2022-01-20 16:26:44,888 DEBUG    decorated.py Функция arg_parser c параметрами (), {} - была вызвана из модуля __main__
+2022-01-20 16:26:44,889 DEBUG    client.py Args loaded
+2022-01-20 16:26:55,057 DEBUG    client.py Using USERNAME = test1, PASSWD = 123456.
+2022-01-20 16:26:55,058 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2022-01-20 16:26:56,007 DEBUG    client.py Keys successfully loaded.
+2022-01-20 16:44:14,362 DEBUG    decorated.py Функция arg_parser c параметрами (), {} - была вызвана из модуля __main__
+2022-01-20 16:44:14,362 DEBUG    client.py Args loaded
+2022-01-20 16:44:22,764 DEBUG    client.py Using USERNAME = test1, PASSWD = 123456.
+2022-01-20 16:44:22,764 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2022-01-20 16:44:22,865 DEBUG    client.py Keys successfully loaded.
+2022-01-20 16:44:22,911 INFO     transport.py Попытка подключения №1
+2022-01-20 16:44:22,911 DEBUG    transport.py Установлено соединение с сервером
+2022-01-20 16:44:22,924 DEBUG    transport.py Passwd hash ready: b'49b70501d4d72ff5522a79cf779df86656a057282ac9ab564efb80fcba4fbc484bedcf52b3fb233d9b7b91337becc542ec3256a0269deddfedbce7275f44a781'
+2022-01-20 16:44:22,925 DEBUG    transport.py Presense message = {'action': 'presence', 'time': 1642686262.9252899, 'user': {'account_name': 'test1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjLpGMIBawgx0yPHnER0d\nSB4h2/GJ8ThcU9INC6waD8XPmNZ73Z+Q5/LZtQEoh0GuekTbDi0BWs4xwv62l64d\nc9e1TWUQ3QGYwpeKjrwKucvowXYBHeH9thLyhEf3Me5/7D6fe6F0I4Zp6RJgtz/G\nFWoGc9UGrCcUWLb3OjJREnz8N6SfrCqRjyxqYD39lrE8N3KKqrW+mQ64C+sBmgc3\nOozDC8I80gDoS1RhynqYjn5bQSDXwfAc3mP//m6t1b1+MFngi2aybteOJcdLxKZL\nZs407REHX8n24HY9DxtmPK0PTpBehcn86FsyMSHyrv48ofq7VtDdCDdncFK2vo4z\nSwIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-01-20 16:44:27,925 DEBUG    transport.py Connection error.
+Traceback (most recent call last):
+  File "D:\учеба\serverapp\3\client\transport.py", line 115, in connection_init
+    ans = get_message(self.transport)
+  File "D:\учеба\serverapp\3\common\utils.py", line 18, in get_message
+    encoded_response = client.recv(MAX_PACKAGE_LENGTH)
+socket.timeout: timed out
+2022-01-20 17:20:06,635 DEBUG    decorated.py Функция arg_parser c параметрами (), {} - была вызвана из модуля __main__
+2022-01-20 17:20:06,635 DEBUG    client.py Args loaded
+2022-01-20 17:20:21,868 DEBUG    client.py Using USERNAME = test3, PASSWD = 123456.
+2022-01-20 17:20:21,868 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test3
+2022-01-20 17:20:24,089 DEBUG    client.py Keys successfully loaded.
+2022-01-20 17:20:24,212 INFO     transport.py Попытка подключения №1
+2022-01-20 17:20:24,212 DEBUG    transport.py Установлено соединение с сервером
+2022-01-20 17:20:24,228 DEBUG    transport.py Passwd hash ready: b'f44dbf0c934a47298490571c4297202a5405bb64709cb564b08d6cfc7ec4a30dd85c6abe4fba002654cc1aba28e755901d836d7b28db2eff6bdd84c006410f3b'
+2022-01-20 17:20:24,236 DEBUG    transport.py Presense message = {'action': 'presence', 'time': 1642688424.2366297, 'user': {'account_name': 'test3', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1MdVBldgdgpaFy/9TnCM\nsVMRVU99JyC3HVqZtuZBKg6PfSXDe75K+2pRScUBouhwZvJi8RXGx99HPZiq++nv\nPImhAX2QTbB2Y88DuT/I+rHaloLFe87AHsPjWB+vb6oAEq+5paksNKcwKfYVudZz\nHqPZVGw2eS+hnfmw0k9TiyDNUaopLWWKa79J9pTDucnThyutyXCF5j1+LDPKXZMb\nPcPsl1DhDSat2u5sgTS50EBa6Q/OWXfi+CBlvVVH3kmV7nBb3Z1y0b0WqnpSkIBm\n03TO3ICA279krctCgwhMr97/IAXx44r5n2gbtSdHos57+6xoSRU/5x3raGCptkBI\nrwIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-01-20 17:20:29,247 DEBUG    transport.py Connection error.
+Traceback (most recent call last):
+  File "D:\учеба\serverapp\3\client\transport.py", line 115, in connection_init
+    ans = get_message(self.transport)
+  File "D:\учеба\serverapp\3\common\utils.py", line 18, in get_message
+    encoded_response = client.recv(MAX_PACKAGE_LENGTH)
+socket.timeout: timed out
+2022-01-20 17:25:25,023 DEBUG    decorated.py Функция arg_parser c параметрами (), {} - была вызвана из модуля __main__
+2022-01-20 17:25:25,023 DEBUG    client.py Args loaded
+2022-01-20 17:25:32,048 DEBUG    client.py Using USERNAME = anna, PASSWD = 123456.
+2022-01-20 17:25:32,048 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: anna
+2022-01-20 17:25:33,850 DEBUG    client.py Keys successfully loaded.
+2022-01-20 17:25:33,988 INFO     transport.py Попытка подключения №1
+2022-01-20 17:25:37,028 INFO     transport.py Попытка подключения №2
+2022-01-20 17:25:40,057 INFO     transport.py Попытка подключения №3
+2022-01-20 17:25:43,097 INFO     transport.py Попытка подключения №4
+2022-01-20 17:25:46,105 INFO     transport.py Попытка подключения №5
+2022-01-20 17:25:49,147 CRITICAL transport.py Не удалось установить соединение с сервером
+2022-01-20 17:25:58,223 DEBUG    decorated.py Функция arg_parser c параметрами (), {} - была вызвана из модуля __main__
+2022-01-20 17:25:58,223 DEBUG    client.py Args loaded
+2022-01-20 17:26:06,629 DEBUG    client.py Using USERNAME = test1, PASSWD = 123456.
+2022-01-20 17:26:06,629 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2022-01-20 17:26:06,769 DEBUG    client.py Keys successfully loaded.
+2022-01-20 17:26:06,852 INFO     transport.py Попытка подключения №1
+2022-01-20 17:26:09,881 INFO     transport.py Попытка подключения №2
+2022-01-20 17:26:12,917 INFO     transport.py Попытка подключения №3
+2022-01-20 17:26:15,962 INFO     transport.py Попытка подключения №4
+2022-01-20 17:26:19,001 INFO     transport.py Попытка подключения №5
+2022-01-20 17:26:22,073 CRITICAL transport.py Не удалось установить соединение с сервером
+2022-01-20 17:26:33,699 DEBUG    decorated.py Функция arg_parser c параметрами (), {} - была вызвана из модуля __main__
+2022-01-20 17:26:33,701 DEBUG    client.py Args loaded
+2022-01-20 17:26:41,893 DEBUG    client.py Using USERNAME = anna, PASSWD = 123456.
+2022-01-20 17:26:41,893 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: anna
+2022-01-20 17:26:42,063 DEBUG    client.py Keys successfully loaded.
+2022-01-20 17:26:42,137 INFO     transport.py Попытка подключения №1
+2022-01-20 17:26:42,137 DEBUG    transport.py Установлено соединение с сервером
+2022-01-20 17:26:42,165 DEBUG    transport.py Passwd hash ready: b'c1e257a1ded916e96401965f92933251f064d625f000677f6bb08a174d322da91224a674e3f84cf335c80458bd98f1e44e0b1d3aae0018539a6756573a395c09'
+2022-01-20 17:26:42,165 DEBUG    transport.py Presense message = {'action': 'presence', 'time': 1642688802.1653488, 'user': {'account_name': 'anna', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6+0FSHbuW9ChGvN+Vl55\nO+DKp2OCfpgdQz+oiQ9JgiLMvWIpxFIa8qMvOcwS2ORFyDigtHhxb3cUWjfv335M\nl9Mzy/QuwD1x9uAkymPqndq1oY1jCrWG9JKIAVxyYWeWZv15lIqO/iWEGVjCl640\nddi5MRyTBglEjWw+wGK10n0BV+bkq3IYVtlCnuDck2qdfUW+CQqXbjeFkojsbLR/\nernndlwpXXCtqC0FRDvgNsFm778Mg/i0igORyXJ+SO0/01BVQgXILK+ADHNe+ZIB\n/u46+1zXZWqE/pWZyERVKEEVZ17I/KRkSMbAFWpofjfNGtogpHgP60ELum5ElVST\nmQIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-01-20 17:26:47,183 DEBUG    transport.py Connection error.
+Traceback (most recent call last):
+  File "D:\учеба\serverapp\3\client\transport.py", line 115, in connection_init
+    ans = get_message(self.transport)
+  File "D:\учеба\serverapp\3\common\utils.py", line 18, in get_message
+    encoded_response = client.recv(MAX_PACKAGE_LENGTH)
+socket.timeout: timed out
+2022-01-20 17:27:00,986 DEBUG    decorated.py Функция arg_parser c параметрами (), {} - была вызвана из модуля __main__
+2022-01-20 17:27:00,986 DEBUG    client.py Args loaded
+2022-01-20 17:27:09,335 DEBUG    client.py Using USERNAME = test1, PASSWD = 123456.
+2022-01-20 17:27:09,335 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2022-01-20 17:27:09,476 DEBUG    client.py Keys successfully loaded.
+2022-01-20 17:27:09,550 INFO     transport.py Попытка подключения №1
+2022-01-20 17:27:09,550 DEBUG    transport.py Установлено соединение с сервером
+2022-01-20 17:27:09,580 DEBUG    transport.py Passwd hash ready: b'49b70501d4d72ff5522a79cf779df86656a057282ac9ab564efb80fcba4fbc484bedcf52b3fb233d9b7b91337becc542ec3256a0269deddfedbce7275f44a781'
+2022-01-20 17:27:09,580 DEBUG    transport.py Presense message = {'action': 'presence', 'time': 1642688829.580811, 'user': {'account_name': 'test1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmKN/CFSxgU8eu0oO0oKw\n29WTZQSfqw/mJgEtr8nLUAOHGcg3kT7epUgPfwbo/V67sJlGhb/UD7dPK81utWRn\nFKhhUGuo+ad/4HnvbSQjIHy2Wbr85T4gJCL1IqTkodAgSOo4Nuv/Qq9r5po0dNIC\nF4YTZrzfCy6V0v349iXM2CXf+/14fHCxsm3OkNCUwHsOW6nzh5fIyAs1UhssJm/Z\nbCNzX5PkRjI7bwBJhoXHNgS1fDyII6vGrQAyAwxU0hKrBAtAzYIon5ZlIYxyF2/5\nKb8IVmLmnrvCpmtjTQ4u80Dp6YuErMCD82GzgUi50UdQoW617AmFxaKpvO7Lu+aA\nfwIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-01-20 17:27:14,584 DEBUG    transport.py Connection error.
+Traceback (most recent call last):
+  File "D:\учеба\serverapp\3\client\transport.py", line 115, in connection_init
+    ans = get_message(self.transport)
+  File "D:\учеба\serverapp\3\common\utils.py", line 18, in get_message
+    encoded_response = client.recv(MAX_PACKAGE_LENGTH)
+socket.timeout: timed out
+2022-01-20 17:32:42,520 DEBUG    decorated.py Функция arg_parser c параметрами (), {} - была вызвана из модуля __main__
+2022-01-20 17:32:42,520 DEBUG    client.py Args loaded
+2022-01-20 17:33:01,080 DEBUG    client.py Using USERNAME = test1, PASSWD = 123456.
+2022-01-20 17:33:01,080 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2022-01-20 17:33:01,230 DEBUG    client.py Keys successfully loaded.
+2022-01-20 17:33:01,283 INFO     transport.py Попытка подключения №1
+2022-01-20 17:33:01,283 DEBUG    transport.py Установлено соединение с сервером
+2022-01-20 17:33:01,294 DEBUG    transport.py Passwd hash ready: b'49b70501d4d72ff5522a79cf779df86656a057282ac9ab564efb80fcba4fbc484bedcf52b3fb233d9b7b91337becc542ec3256a0269deddfedbce7275f44a781'
+2022-01-20 17:33:01,303 DEBUG    transport.py Presense message = {'action': 'presence', 'time': 1642689181.3033564, 'user': {'account_name': 'test1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmKN/CFSxgU8eu0oO0oKw\n29WTZQSfqw/mJgEtr8nLUAOHGcg3kT7epUgPfwbo/V67sJlGhb/UD7dPK81utWRn\nFKhhUGuo+ad/4HnvbSQjIHy2Wbr85T4gJCL1IqTkodAgSOo4Nuv/Qq9r5po0dNIC\nF4YTZrzfCy6V0v349iXM2CXf+/14fHCxsm3OkNCUwHsOW6nzh5fIyAs1UhssJm/Z\nbCNzX5PkRjI7bwBJhoXHNgS1fDyII6vGrQAyAwxU0hKrBAtAzYIon5ZlIYxyF2/5\nKb8IVmLmnrvCpmtjTQ4u80Dp6YuErMCD82GzgUi50UdQoW617AmFxaKpvO7Lu+aA\nfwIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-01-20 17:33:06,311 DEBUG    transport.py Connection error.
+Traceback (most recent call last):
+  File "D:\учеба\serverapp\3\client\transport.py", line 115, in connection_init
+    ans = get_message(self.transport)
+  File "D:\учеба\serverapp\3\common\utils.py", line 18, in get_message
+    encoded_response = client.recv(MAX_PACKAGE_LENGTH)
+socket.timeout: timed out
+2022-01-20 18:07:49,986 DEBUG    decorated.py Функция arg_parser c параметрами (), {} - была вызвана из модуля __main__
+2022-01-20 18:07:49,986 DEBUG    client.py Args loaded
+2022-01-20 18:08:02,348 DEBUG    client.py Using USERNAME = test2, PASSWD = 123456.
+2022-01-20 18:08:02,348 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test2
+2022-01-20 18:08:02,529 DEBUG    client.py Keys successfully loaded.
+2022-01-20 18:08:02,607 INFO     transport.py Попытка подключения №1
+2022-01-20 18:08:02,607 DEBUG    transport.py Установлено соединение с сервером
+2022-01-20 18:08:02,635 DEBUG    transport.py Passwd hash ready: b'6c95daf460f03d00239959faac8387d157dafbe382cd684426a295cd37fbcb0e4d874cae7b07017717c8acaff862f6241d4eaeea2366f6a7b5076a8c72035cd6'
+2022-01-20 18:08:02,635 DEBUG    transport.py Presense message = {'action': 'presence', 'time': 1642691282.635928, 'user': {'account_name': 'test2', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtrfkZ/5Xtj72x44QP9b5\neTenYYlSJkkb6X+jL4pqATUwGcvvcxBDtRrR0j1VZzhdlUvetoA3MvecULu3jTvg\nRhcrRHQRIzgMSjNV9ZGFBqhZvQmwGJEDI72dAjLyb1e5t1fT45o2DRfA+Zgxt+N0\ntTIgV7xIQiJrkGkaTje1oXqa9a1MH3o2bMLyrnfv2FE3SKdEQK5GUy+ec0P42QUx\njQ4GG2tEVYHJHS8tiQ+Rwz2Qcubs2YeqmLiUP6ZNdRLEZxn4YN0YNsTPEYzre2qo\n/nAAuWSixjOzt8OQQoSlOjL+VcDZBTitNSmnCMtjcVeTj36J5jUsc3onQofaWf1M\npQIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-01-20 18:08:07,653 DEBUG    transport.py Connection error.
+Traceback (most recent call last):
+  File "D:\учеба\serverapp\3\client\transport.py", line 115, in connection_init
+    ans = get_message(self.transport)
+  File "D:\учеба\serverapp\3\common\utils.py", line 18, in get_message
+    encoded_response = client.recv(MAX_PACKAGE_LENGTH)
+socket.timeout: timed out
