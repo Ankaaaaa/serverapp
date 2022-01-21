@@ -1814,3 +1814,19 @@ Traceback (most recent call last):
   File "D:\учеба\serverapp\3\common\utils.py", line 18, in get_message
     encoded_response = client.recv(MAX_PACKAGE_LENGTH)
 socket.timeout: timed out
+2022-01-21 13:36:43,972 DEBUG    decorated.py Функция arg_parser c параметрами (), {} - была вызвана из модуля __main__
+2022-01-21 13:36:43,973 DEBUG    client.py Args loaded
+2022-01-21 13:36:52,476 DEBUG    client.py Using USERNAME = test1, PASSWD = 123456.
+2022-01-21 13:36:52,476 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2022-01-21 13:36:52,651 DEBUG    client.py Keys successfully loaded.
+2022-01-21 13:36:52,700 INFO     transport.py Попытка подключения №1
+2022-01-21 13:36:52,701 DEBUG    transport.py Установлено соединение с сервером
+2022-01-21 13:36:52,717 DEBUG    transport.py Passwd hash ready: b'49b70501d4d72ff5522a79cf779df86656a057282ac9ab564efb80fcba4fbc484bedcf52b3fb233d9b7b91337becc542ec3256a0269deddfedbce7275f44a781'
+2022-01-21 13:36:52,718 DEBUG    transport.py Presense message = {'action': 'presence', 'time': 1642761412.7188892, 'user': {'account_name': 'test1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmKN/CFSxgU8eu0oO0oKw\n29WTZQSfqw/mJgEtr8nLUAOHGcg3kT7epUgPfwbo/V67sJlGhb/UD7dPK81utWRn\nFKhhUGuo+ad/4HnvbSQjIHy2Wbr85T4gJCL1IqTkodAgSOo4Nuv/Qq9r5po0dNIC\nF4YTZrzfCy6V0v349iXM2CXf+/14fHCxsm3OkNCUwHsOW6nzh5fIyAs1UhssJm/Z\nbCNzX5PkRjI7bwBJhoXHNgS1fDyII6vGrQAyAwxU0hKrBAtAzYIon5ZlIYxyF2/5\nKb8IVmLmnrvCpmtjTQ4u80Dp6YuErMCD82GzgUi50UdQoW617AmFxaKpvO7Lu+aA\nfwIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-01-21 13:36:57,731 DEBUG    transport.py Connection error.
+Traceback (most recent call last):
+  File "D:\учеба\serverapp\3\client\transport.py", line 115, in connection_init
+    ans = get_message(self.transport)
+  File "D:\учеба\serverapp\3\common\utils.py", line 18, in get_message
+    encoded_response = client.recv(MAX_PACKAGE_LENGTH)
+socket.timeout: timed out
